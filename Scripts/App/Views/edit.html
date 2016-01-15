@@ -1,0 +1,16 @@
+<h2>Edit Item</h2>
+<div>
+    <div class="dnnForm dnnEditItem" id="dnnEditItem">
+        <fieldset>            
+             <div class="dnnFormItem">
+                <div><label for="itemName">Name</label></div>
+                <input id="itemName" type="text" [(ngModel)]="data.name" />
+            </div>   
+             <div class="dnnFormItem">
+                <div><label for="itemDescription">Description</label></div>
+                <input id="itemDescription" type="text" [(ngModel)]="data.description" />
+            </div>                        
+        </fieldset>
+    </div>
+    <a (click)="Save()" class="dnnPrimaryAction">Save</a>
+</div>

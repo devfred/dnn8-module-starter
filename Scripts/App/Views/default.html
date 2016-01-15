@@ -1,0 +1,7 @@
+<h2>Default View</h2>
+<ul>
+    <li *ngFor="#item of data">
+        {{item.name}}
+        <a [routerLink]="['/Edit',{id: item.id}]">Edit</a>
+    </li>
+</ul>
