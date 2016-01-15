@@ -198,3 +198,4 @@ FakesAssemblies/
 
 install/*
 *.map
+*.js
