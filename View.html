@@ -1,0 +1,25 @@
+﻿[JavaScript:{ path: "~/DesktopModules/ModuleStarter/scripts/node_modules/es6-shim/es6-shim.js"}]
+[JavaScript:{ path: "~/DesktopModules/ModuleStarter/scripts/node_modules/angular2/bundles/angular2-polyfills.js"}]
+[JavaScript:{ path: "~/DesktopModules/ModuleStarter/scripts/node_modules/systemjs/dist/system.src.js"}]
+[JavaScript:{ path: "~/DesktopModules/ModuleStarter/scripts/node_modules/rxjs/bundles/Rx.js"}]
+[JavaScript:{ path: "~/DesktopModules/ModuleStarter/scripts/node_modules/angular2/bundles/angular2.dev.js"}]
+[JavaScript:{ path: "~/DesktopModules/ModuleStarter/scripts/node_modules/angular2/bundles/http.dev.js"}]
+[JavaScript:{ path: "~/DesktopModules/ModuleStarter/scripts/node_modules/angular2/bundles/router.dev.js"}]
+[JavaScript:{ path: "~/DesktopModules/ModuleStarter/scripts/node_modules/angular2-google-maps/bundles/angular2-google-maps.js"}]
+
+[ModuleAction:{controlKey : "Edit", securityAccessLevel : "Edit",  titleKey: "EditModule", localResourceFile: "~/DesktopModules/ModuleStarter/App_LocalResources/View.resx" }]
+
+<script>
+System.config({
+    packages: {        
+        '/DesktopModules/ModuleStarter/Scripts/App': {
+            format: 'register',
+            defaultExtension: 'js'
+        }
+    }
+});    
+System.import('/DesktopModules/ModuleStarter/Scripts/App/boot').then(null, console.error.bind(console));
+</script>
+
+
+<dnn-module module-id="[ModuleContext:ModuleId]"></dnn-module>
